@@ -1,12 +1,9 @@
-import { DatePicker } from 'antd'
-import type { DatePickerProps } from 'antd'
+import LivePlayer from '@/components/LivePlayer'
+import styles from './Layout.module.scss'
 const Layout = () => {
-  const onChange: DatePickerProps['onChange'] = (_, datestring) => {
-    console.log(datestring)
-  }
   return (
-    <div>
-      <DatePicker onChange={onChange} />
+    <div className={styles.LayoutContainer}>
+      <LivePlayer />
     </div>
   )
 }
